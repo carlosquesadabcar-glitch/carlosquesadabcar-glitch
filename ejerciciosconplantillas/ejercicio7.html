@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Navideña</title>
+  <style>
+    /* Estilos básicos */
+    body {
+      margin: 0;
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5fa; /* fondo suave */
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: #333;
+    }
+
+    .card {
+      background-color: #fffef9; /* tarjeta blanca */
+      max-width: 900px;
+      width: 100%;
+      border-radius: 18px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      color: #c11a2b; /* título con color distinto */
+      margin: 6px 0 12px;
+      font-size: 2rem;
+      letter-spacing: 0.6px;
+    }
+
+    p.lead {
+      font-family: 'Georgia', serif; /* fuente distinta para párrafo */
+      font-size: 1.3rem;             /* tamaño más grande */
+      color: #444;
+    }
+
+    p.sub {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .image-wrap {
+      display: block;
+      max-height: 560px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 4px solid rgba(0,0,0,0.06);
+      margin: 12px 0;
+    }
+
+    .image-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      background: linear-gradient(90deg, #c11a2b, #ff6b6b);
+      color: white;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(193,26,43,0.2);
+    }
+
+    @media (max-width:600px) {
+      h1 { font-size: 1.4rem; }
+      .card { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-labelledby="titulo">
+    <h1 id="titulo">¡Felices Fiestas!</h1>
+
+    <a class="image-wrap" href="#" aria-label="Imagen navideña">
+      <!-- Imagen en base64 de ejemplo; reemplaza {{B64}} por tu cadena completa -->
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4
+      //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" 
+      alt="Escena navideña: árbol iluminado y decoración festiva" />
+    </a>
+
+    <p class="lead">
+      Que la calidez de estas fechas llene tu hogar de luz, risas y abrazos. Disfruta de los pequeños momentos: chocolate caliente, villancicos y estrellas en el cielo.
+    </p>
+    <p class="sub">Diseñado con cariño para compartir espíritu navideño.</p>
+
+    <div class="actions">
+      <button type="button" class="btn" onclick="alert('¡Feliz Navidad! 🎄')">Enviar buenos deseos</button>
+    </div>
+  </div>
+</body>
+</html>
